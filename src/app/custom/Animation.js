@@ -25,7 +25,7 @@ export default class Animation {
                 from: "center"}}).repeat(-1)
         })
         this._stopBtn.addEventListener("click", async () => {
-            this._tl.restart().clear()
+            this._tl.restart().clear().pause()
         })
     }
 }
