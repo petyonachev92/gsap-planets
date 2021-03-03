@@ -9,7 +9,7 @@ export default class Animation {
         this._tl = gsap.timeline()
     }
 
-    async start() {
+    start() {
         this._scaleBtn.addEventListener("click", () => {
             this._tl.restart().clear()
             this._tl.to(this._planets, {scale: 0, stagger: 0.1, id: "scaleStagger"})
