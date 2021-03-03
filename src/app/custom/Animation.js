@@ -28,7 +28,7 @@ export default class Animation {
             console.log(this._tl.getTweensOf())
         })
         this._stopBtn.addEventListener("click", async () => {
-            this._tl.restart().clear().pause()
+            this._tl.restart().pause().clear()
         })
     }
 }
