@@ -36,8 +36,6 @@ export default class Application extends EventEmitter {
     const animation = new Animation();
     
     this.data.animation = animation;
-    animation.start();
-
 
     this.emit(Application.events.APP_READY);
   }

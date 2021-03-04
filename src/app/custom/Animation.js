@@ -7,9 +7,7 @@ export default class Animation {
         this._positionBtn = document.querySelector("#position-button")
         this._stopBtn = document.querySelector("#stop-button")
         this._tl = gsap.timeline()
-    }
-
-    start() {
+        
         this._scaleBtn.addEventListener("click", () => {
             this._tl.restart().clear()
             this._tl.to(this._planets, {scale: 0, stagger: 0.1, id: "scaleStagger"})
